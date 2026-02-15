@@ -12,27 +12,19 @@ The goal is to implement a small BERT model from scratch, adapt it to a Sentence
 ├── .gitignore
 ├── README.md
 ├── app
-│   └── model_architecture.py      # BERT encoder + SentenceEncoder + SBERT classifier (for web app)
-├── code_along                     # Instructor reference notebooks
-│   ├── BERT-update.ipynb
-│   ├── BERT.ipynb
-│   └── S-BERT.ipynb
-├── dataset                        # (optional) local datasets
-├── figure                         # figures for report/summary
-├── instruction
-│   └── NLP_2026_A4_Do_you_AGREE.pdf
-├── lecture
-│   ├── L7 Tokenization_ BPE, WordPiece, Unigram.pdf
-│   └── L8 Pretrained Models, BERT, SentenceBERT, SimCSE, GPT, T5.pdf
+│   ├── app.py
+│   ├── model_architecture.py
+│   └── templates
+│       └── index.html
+├── figure
+│   ├── contradiction.png       
+│   ├── entailment.png
+│   └── neutral.png
 ├── model
-│   ├── bert_pretrained_from_scratch.pt   # BERT checkpoint (Task 1)
-│   └── sbert_sentence_encoder.pt         # SBERT checkpoint (Task 2)
-├── notebook
-│   └── code_1.ipynb              # Main notebook for Task 1–3
-└── summary
-    ├── a4-nlp-bert-sbert-review.md
-    └── figure
-        └── what_is_B_D.png
+│   ├── bert_pretrained_from_scratch.pt
+│   └── sbert_sentence_encoder.pt
+└── notebook
+    └── code_1.ipynb
 ```
 
 ---
