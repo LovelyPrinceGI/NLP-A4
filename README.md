@@ -1,7 +1,7 @@
 # NLP A4 – Do you AGREE?
 
 This repository contains my implementation for the assignment **“A4 Do you AGREE?”** for the NLP course at AIT.  
-The goal is to implement a small BERT model from scratch, adapt it to a Sentence-BERT style architecture for NLI, and prepare it for use in a simple web application[file:7].
+The goal is to implement a small BERT model from scratch, adapt it to a Sentence-BERT style architecture for NLI, and prepare it for use in a simple web application.
 
 ---
 
@@ -107,7 +107,7 @@ The goal is to implement a small BERT model from scratch, adapt it to a Sentence
   - Add `[CLS]` and `[SEP]` to each sentence: `[CLS] tokens [SEP]`.
   - Build `segment_ids` (all zeros, single-sentence).
   - Pass through BERT encoder to get hidden states.
-  - Apply **mean pooling** over non-PAD tokens → sentence embedding `u` or `v` [file:7].
+  - Apply **mean pooling** over non-PAD tokens → sentence embedding `u` or `v`.
 
 - **SBERT-style classifier**
   - For each pair (premise, hypothesis), compute embeddings `u` and `v`.
@@ -168,13 +168,13 @@ contradiction       0.42      0.11      0.17       329
     - Replace word-level tokenizer with subword (WordPiece/BPE) using HuggingFace tokenizers.
   - **Objective & training:**
     - Explore contrastive learning (e.g., SimCSE) to improve sentence embeddings.
-    - Introduce learning rate schedulers, early stopping, or regularization for better generalization [file:5].
+    - Introduce learning rate schedulers, early stopping, or regularization for better generalization.
 
 ---
 
 ## 5. `app/model_architecture.py`
 
-The `app/model_architecture.py` file contains the reusable architecture for the web app [file:7]:
+The `app/model_architecture.py` file contains the reusable architecture for the web app:
 
 - **Helper functions**
   - `get_attn_pad_mask(seq_q, seq_k, pad_id)`
