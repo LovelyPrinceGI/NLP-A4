@@ -1,0 +1,13 @@
+# 🐍 Python & System Junk
+__pycache__/
+*.pyc
+*.DS_Store
+.ipynb_checkpoints/
+.vs/
+
+# 🚫 Excluded Folders
+summary/
+instruction/
+lecture/
+code_along/
+dataset/
